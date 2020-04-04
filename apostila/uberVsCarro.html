@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<h1><strong>Uber vs Carro</strong></h1>
+
+<h2>Uber</h2>
+
+<p>Total: R$42.68</p>
+
+<h2>Carro</h2>
+
+<script>
+
+    var totalGasolina = parseFloat(prompt("Digite o quanto gastará com gasolina"))
+    
+    var totalEstacionamento = parseFloat(prompt("Digite o quanto gastará com estacionamento"))
+    
+    var totalCarro = totalGasolina + totalEstacionamento
+
+    document.write("Gasolina: R$ " + totalGasolina.toFixed(2).reaplace(".", ","))
+    
+    document.write("<br>")
+    
+    document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2).reaplace("." , ","))
+    
+    document.write("<br>")
+
+    document.write("Total: R$ " + totalCarro.toFixed(2).reaplace(".", ","))
+
+
+
+</script>
+
+
+<!-- <script> // Fixa em Duas Casas Decimais. Debolve String
+
+    var numero = 0.314178473
+
+    var numeroFixado2CasasDecimais = numero.toFixed(2)
+
+</script> -->
+
+<!-- <script> // //Altera letra, nome, número, ponto, vírgula etc no texto todo
+
+    var empresa = "Kaelum"
+
+    empresa = empresa.replace("K", "C")
+
+</script> -->

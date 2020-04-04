@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<h1><strong>Uber VS Carro</strong></h1>
+
+<h2>Uber</h2>
+
+<p>Total: $42,68 reais</p>
+
+<h2>Carro</h2>
+
+<script>
+
+    var totalGasoina = parseFloat(prompt("Qual o valor total da gasolina?"));
+
+    var totalEstacionamento = parseFloat(prompt("Qual o valor total do estacionamento?"));
+
+    var totalCarro = (totalGasoina + totalEstacionamento);
+
+    document.write("Gasolina: R$ " +  totalGasoina.toFixed(2).replace(".",","));
+    document.write("<br>")
+    document.write("<br>")
+    document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2).replace(".", ","));
+    document.write("<br>")
+    document.write("<br>")
+    document.write("Total: R$ " + totalCarro.toFixed(2).replace(".", ","));
+    
+
+</script>
