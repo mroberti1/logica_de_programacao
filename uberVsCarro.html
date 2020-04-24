@@ -2,13 +2,9 @@
 
 <h1><strong>Uber vs Carro</strong></h1>
 
-<h2>Uber</h2>
-
-<p>Total: R$42.68</p>
-
 <h2>Carro</h2>
 
-<script>
+<!-- <script>
 
     var totalGasolina = parseFloat(prompt("Digite o quanto gastará com gasolina"))
     
@@ -16,33 +12,96 @@
     
     var totalCarro = totalGasolina + totalEstacionamento
 
-    document.write("Gasolina: R$ " + totalGasolina.toFixed(2).reaplace(".", ","))
+    document.write("Gasolina: R$ " + totalGasolina.toFixed(2) .replace(".", ","))
     
     document.write("<br>")
     
-    document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2).reaplace("." , ","))
+    document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2) .replace("." , ","))
     
     document.write("<br>")
 
-    document.write("Total: R$ " + totalCarro.toFixed(2).reaplace(".", ","))
+    document.write("Total: R$ " + totalCarro.toFixed(2) .replace(".", ","))
+
+</script> -->
+
+<!-- <script>
+    
+    //var totalGasolina = parseFloat(prompt("Digite o quanto gastará com gasolina"))
+    
+    var distancia = parseFloat(prompt("Qual a distância será percorrida?"))
+
+    var autonomia = parseFloat(prompt("Quantos Km seu carro faz por litro?"))
+
+    var precoLitroGasolina = parseFloat(prompt("Qual o preço do litro da gasolina?"))
+
+    var totalGasolina = (distancia / autonomia) * precoLitroGasolina
 
 
+
+    var totalEstacionamento = parseFloat(prompt("Digite o quanto gastará com estacionamento"))
+    
+    var totalCarro = totalGasolina + totalEstacionamento
+
+    //document.write("Gasolina: R$ " + totalGasolina.toFixed(2) .replace(".", ","))
+    
+    //document.write("<br>")
+    
+    //document.write("Estacionamento: R$ " + totalEstacionamento.toFixed(2) .replace("." , ","))
+    
+    //document.write("<br>")
+
+    //document.write("Total: R$ " + totalCarro.toFixed(2) .replace(".", ","))
+
+    document.write(`
+    Gasolina: R$ ${totalGasolina.toFixed(2).replace(".", ",")}
+    <br>
+    Estacionamento: R$ ${totalEstacionamento.toFixed(2).replace(".", ",")}
+    <br>
+    Total: R$ ${totalCarro.toFixed(2).replace(".", ",")}
+    `)
+    
+    
+    var totalUber = 2 + distancia * 1.4 + tempoEmMinutos * 0.25
+    document.write("Total Uber")
+
+</script> -->
+
+<script>
+
+var distancia = parseFloat(prompt("Qual a distância será percorrida?"))
+
+var autonomia = parseFloat(prompt("Quantos Km seu carro faz por litro?"))
+
+var precoLitroGasolina = parseFloat(prompt("Qual o preço do litro da gasolina?"))
+
+var totalGasolina = (distancia / autonomia) * precoLitroGasolina
+
+
+
+var totalEstacionamento = parseFloat(prompt("Digite o quanto gastará com estacionamento"))
+
+var totalCarro = totalGasolina + totalEstacionamento
+
+document.write(`
+Gasolina: R$ ${totalGasolina.toFixed(2).replace(".", ",")}
+<br>
+Estacionamento: R$ ${totalEstacionamento.toFixed(2).replace(".", ",")}
+<br>
+Total: R$ ${totalCarro.toFixed(2).replace(".", ",")}
+`)
 
 </script>
 
+<h2>Uber</h2>
 
-<!-- <script> // Fixa em Duas Casas Decimais. Debolve String
+<script>
 
-    var numero = 0.314178473
+distancia = prompt("Qual a distância com passageiro?")
 
-    var numeroFixado2CasasDecimais = numero.toFixed(2)
+tempo = prompt("Qual o tempo de viagem?")
 
-</script> -->
+valorcorrida = 2 + distancia * 1.4 + tempo  * 0.26
 
-<!-- <script> // //Altera letra, nome, número, ponto, vírgula etc no texto todo
+document.write("O valor corrida é de: " + "R$" + valorcorrida.toFixed(2).replace(".", ","))
 
-    var empresa = "Kaelum"
-
-    empresa = empresa.replace("K", "C")
-
-</script> -->
+</script>
